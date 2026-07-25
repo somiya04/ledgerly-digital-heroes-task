@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Book a Ledgerly demo</title>
+<meta name="description" content="Book a 20-minute Ledgerly demo with your own invoice volume, or reach the team directly.">
+<link rel="canonical" href="https://example.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Book a Ledgerly demo">
+<meta property="og:description" content="Book a 20-minute Ledgerly demo with your own invoice volume, or reach the team directly.">
+<meta property="og:url" content="https://example.com/contact.html">
+<meta property="og:image" content="https://example.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ledgerly",
+  "url": "https://example.com/",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@ledgerly.example",
+    "contactType": "sales"
+  }
+}
+</script>
+</head>
+<body data-page="contact">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Ledger<span class="brand-mark">ly</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu" onclick="document.querySelector('.nav-list').classList.toggle('open'); this.setAttribute('aria-expanded', document.querySelector('.nav-list').classList.contains('open'))">&#9776;</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a demo</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <span class="hero-eyebrow">Contact</span>
+      <h1 style="max-width:16ch;">Let's look at your invoices, not a slide deck.</h1>
+      <p class="lede">Tell us a bit about your team and we'll set up a 20-minute walkthrough using your own numbers.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="form-heading">
+    <div class="container">
+      <h2 id="form-heading" class="visually-hidden">Contact form</h2>
+
+      <form class="form-grid" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" autocomplete="organization" required>
+        </div>
+        <div class="form-field">
+          <label for="volume">Invoices per month</label>
+          <select id="volume" name="volume">
+            <option value="under-100">Under 100</option>
+            <option value="100-1000">100 – 1,000</option>
+            <option value="1000-plus">1,000+</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label for="message">What's slowing your team down right now?</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <span class="hint">Optional, but it helps us tailor the demo.</span>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">Request a demo</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <div>
+          <h3>Email</h3>
+          <p>hello@ledgerly.example</p>
+        </div>
+        <div>
+          <h3>Sales</h3>
+          <p>Mon&ndash;Fri, 9am&ndash;6pm IST</p>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <p>Response within one business day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Ledgerly</h4>
+        <p style="max-width:32ch;">Invoicing and expense control built for B2B finance teams that outgrew spreadsheets.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">Overview</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Book a demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ledgerly Inc. A fictional company built for a hiring exercise.</span>
+      <span class="footer-credit">Built for <a href="https://digitalheroesco.com" target="_blank" rel="noopener">Digital Heroes Training Task</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
